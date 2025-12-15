@@ -12,6 +12,7 @@ source:
     - find-lib.patch
     - set-stat.patch
     - fix-tblite-table-set-value.patch
+    - print.patch
 
 build:
   number: 2
