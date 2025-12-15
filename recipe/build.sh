@@ -17,6 +17,7 @@ export FFLAGS=${FFLAGS/-I /-I}
 
 meson setup _build \
   ${MESON_ARGS} \
+  -Dfortran_args="-fcheck=all" \
   -Dlapack=netlib \
   --warnlevel=everything
 

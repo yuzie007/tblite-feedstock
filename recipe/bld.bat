@@ -9,6 +9,7 @@ meson setup _build ^
   -Ddefault_library=shared ^
   -Dlapack=custom ^
   -Dcustom_libraries="-L%LIBRARY_PREFIX%\bin,lapack,blas" ^
+  -Dfortran_args="-fcheck=all" ^
   --warnlevel=everything
 
 if %ERRORLEVEL% neq 0 exit 1
